@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mazare3/models/onboarding_info.dart';
 import 'package:mazare3/views/home_view.dart';
+import '../views/login.dart';
+
 
 class OnboardingCustomerController extends GetxController {
   var selectedPageIndex = 0.obs;
@@ -10,7 +12,7 @@ class OnboardingCustomerController extends GetxController {
 
   forwardAction() {
     if (isLastPage) {
-      Get.to(()=>HomeView());
+      Get.to(()=>LoginView());
     } else
       pageController.nextPage(duration: 300.milliseconds, curve: Curves.ease);
   }
