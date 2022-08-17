@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'main.dart';
+import 'farmer_or_customer_view.dart';
 import 'signup.dart';
 
 class LoginView extends StatelessWidget {
@@ -18,7 +18,9 @@ class LoginView extends StatelessWidget {
             Row(
               children: [
                 GestureDetector(
-                  onTap: () => () {},
+                  onTap: () => () {
+                    Get.to(FarmerOrCustomerView());
+                  },
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: const [
