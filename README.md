@@ -1,4 +1,5 @@
 # mazare3
+The main goal of this app is to ease the communication between the customers and villa owners to rent their Farmes/villas out.
 
 A new Flutter project.
 
